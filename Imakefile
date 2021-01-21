@@ -1,0 +1,77 @@
+#ifndef XCOMM
+#define XCOMM #
+#endif
+XCOMM
+XCOMM************************ Copyright (C) WASY GmbH 2006 ************************
+XCOMM
+XCOMM       FEFLOW * interactive graphics-based Finite Element simulation
+XCOMM            system for subsurface FLOW and transport processes
+XCOMM
+XCOMM******************************************************************************
+XCOMM
+
+#define CplusplusSource
+#undef CCsuf
+#define CCsuf cxx
+
+#include <Ifm.tmpl>
+
+/**********************************************************************/
+
+XCOMM -- IFM_BEGIN (Begin of IFM maintained section) --------------
+
+           THISFILE = __FILE__
+
+            IFCNAME = SIMULATION
+            MODNAME = IFMTECPLOT_V1
+            DPYNAME = Ifmtecplot_v1
+
+            PRIMSRC = ifmtecplot_v1.cxx
+            DSONAME = ifmtecplot_v1.so
+             DSOREV = 1
+
+            REGPROC = RegisterModule
+           HTMLFILE = ifmtecplot_v1.htm
+          COPYRIGHT = ifmtecplot_v1.txt
+
+            GUILIBS =  
+
+      IFMDEBUGFLAGS = DebuggableCDebugFlags
+        IFMINCLUDES = -I. $(IFMINC)
+         IFMDEFINES = 
+         IFMDEPLIBS =  $(DEPIFMLIB)
+            IFMLIBS =  $(IFMLIB)
+
+            IFMOBJS = ifmtecplot_v1.o
+            IFMSRCS = $(PRIMSRC) 
+
+XCOMM -- IFM_END (End of IFM maintained section) ------------------
+
+/*
+** On some architectures (e.g. SGI-IRIX 6.x) Motif.tmpl forces to
+** load the XPixmap library libXpm. But the rules to find the
+** library seem to work not correctly! If you need the XPM library
+** delete the next line and patch some defines (like XPM_TOP).
+*/
+           XPM_LIBS = # we do not need XPM ...
+
+/*
+** Starting here you can apply private changes - but do NOT remove 
+** the default values (prefix: IFM) without knowledge of Imakefiles!!!
+*/
+
+        CDEBUGFLAGS = $(IFMDEBUGFLAGS)
+           INCLUDES = $(IFMINCLUDES)
+            DEFINES = $(IFMDEFINES)
+            DEPLIBS = $(IFMDEPLIBS)
+               LIBS = $(IFMLIBS) $(GUILIBS)
+
+               OBJS = $(IFMOBJS)
+               SRCS = $(IFMSRCS)
+
+all:: $(DSONAME)
+
+/**********************************************************************/
+
+IfmModuleTarget($(DSONAME),$(DSOREV),$(OBJS),$(DEPLIBS),$(LIBS),$(SYSLIBS))
+DependTarget()
