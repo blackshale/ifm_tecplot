@@ -1,0 +1,238 @@
+! FEFLOW supermesh extension file
+
+VERSION
+  6.0
+MAP_PATH
+  path  = ../../../CloudStation-KIGAM/Sharefiles/Feflow-IFM-tecplot-interface-devel/import+export/BGM-osong.tif
+  type  = image
+  xmin  = 227109.5475362163
+  xmax  = 227939.5354244085
+  ymin  = 442792.3266714988
+  ymax  = 443238.0609077503
+  time  = Fri Aug 28 03:02:25 2020
+  visible = no
+MAP_PATH
+  path  = ../../../CloudStation-KIGAM/Sharefiles/Feflow-IFM-tecplot-interface-devel/import+export/ModelDomain_GRS80.shp
+  type  = shape
+  shape = polygons
+  xmin  = 227421.2264999999
+  xmax  = 227684.7625999999
+  ymin  = 442850.5584999993
+  ymax  = 443199.6745999993
+  time  = Tue Aug 18 09:10:36 2020
+MAP_PATH
+  path  = ../../../CloudStation-KIGAM/Sharefiles/Feflow-IFM-tecplot-interface-devel/import+export/BHWells.shp
+  type  = shape
+  shape = points
+  xmin  = 227566.4840000002
+  xmax  = 227584.3559999997
+  ymin  = 442961.6889999993
+  ymax  = 442985.2980000004
+  time  = Wed Aug 26 09:33:54 2020
+MAP_PATH
+  path  = ../../../CloudStation-KIGAM/Sharefiles/Feflow-IFM-tecplot-interface-devel/import+export/MonitoringWells.shp
+  type  = shape
+  shape = points
+  xmin  = 227571.1150000002
+  xmax  = 227587.5630000001
+  ymin  = 442951.6689999998
+  ymax  = 442988.0739999991
+  time  = Wed Aug 26 09:36:18 2020
+MAP_PATH
+  path  = ../../../CloudStation-KIGAM/Sharefiles/Feflow-IFM-tecplot-interface-devel/import+export/Pond Boundary_GRS80.shp
+  type  = shape
+  shape = polygons
+  xmin  = 227567.1046000002
+  xmax  = 227578.1000000002
+  ymin  = 442977.5639999993
+  ymax  = 442988.7679999993
+  time  = Wed Aug 26 09:36:11 2020
+MAP_PATH
+  path  = ../../../CloudStation-KIGAM/Sharefiles/Feflow-IFM-tecplot-interface-devel/import+export/Previous Wells.shp
+  type  = shape
+  shape = points
+  xmin  = 227527.3541000001
+  xmax  = 227551.0838000001
+  ymin  = 443058.5932
+  ymax  = 443148.8025000002
+  time  = Wed Aug 26 09:36:22 2020
+  visible = no
+EXTENTS
+ 0.00000000000000e+00, 0.00000000000000e+00, 1.00000000000000e+02, 1.00000000000000e+02,
+ 0.00000000000000e+00, 0.00000000000000e+00, 1.00000000000000e+02, 1.00000000000000e+02,
+1
+OPTIONS
+  SkipMeshFill=true
+  SkipMeshDraw=false
+  BackingStore=false
+  OpaqueFringeMode=true
+  LegendViewMode=false
+  VelocityApproximationType=0
+  EquationSolverType=12
+  IterSymmType=0
+  IterNonsymmType=4
+  PreconditionSymmType=0
+  MaxNumbOrthogonal=5
+  HideVelocity=false
+  VelocityType=0
+  GeoCS=
+  SubdivisionCurvedEdges=32
+  ShowOverview=true
+  ShowMeshWindow=true
+  TimeUnit=4
+  SpatialIndexing=false
+  MinimalSliceDistance=0.1
+CLIENT
+  <?xml version="1.0" encoding="utf-8" standalone="no" ?>
+  <client id="wasy.feqt" class="doc">
+    <doc typeElementSelection="2">
+      <views>
+        <view key="Supermesh View" autoScaleFont="true" resolEnhancFac="1" font="Arial,7,-1,5,50,0,0,0,0,0" lightingDesired="false" useDynPosRef="false" showCompass="true">
+          <colorBG R="1" G="1" B="1" A="1" />
+          <enclosingFrame width="876" height="702" />
+          <position relDist="1.2653239984696" relOffsetX="0.0659059767596605" relOffsetY="0.00334468288647295">
+            <tilt angleRad="0" axisX="0" axisY="0" axisZ="1" />
+            <spin angleRad="0" axisX="0" axisY="0" axisZ="1" />
+          </position>
+          <positionPref relDist="1" relOffsetX="0" relOffsetY="0">
+            <tilt angleRad="0" axisX="0" axisY="0" axisZ="1" />
+            <spin angleRad="0" axisX="0" axisY="0" axisZ="1" />
+          </positionPref>
+          <scale x="1" y="1" z="1" />
+          <magnify factor="2" lensX="100" lensY="100" />
+          <overlayItems>
+            <sizes>
+              <size item="Legend Source Name" value="1.1" />
+            </sizes>
+            <opacityValues>
+              <opacity item="Orientation Icon" value="0.85" />
+              <opacity item="Logo" value="0.85" />
+              <opacity item="Trademark" value="0.4" />
+            </opacityValues>
+            <visibility>
+              <visible>Orientation Icon</visible>
+              <visible>Length Scale</visible>
+            </visibility>
+          </overlayItems>
+          <legendProps>
+            <colorBG R="1" G="1" B="1" A="0.149996" />
+          </legendProps>
+          <sources>
+            <source key="Geometry">
+              <styles>
+                <style key="Outer Border" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Supermesh borders" show="true" />
+                  </componentViews>
+                  <color R="0" G="0" B="0" A="1" />
+                </style>
+                <style key="Node Numbers" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Supermesh" show="false" />
+                  </componentViews>
+                  <color R="0" G="0" B="0" A="1" />
+                </style>
+                <style key="Mesh Origin" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Origin" show="false" />
+                  </componentViews>
+                  <color R="0" G="0" B="0" A="0.5" />
+                </style>
+                <style key="Polygon Area" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Supermesh" show="true" />
+                  </componentViews>
+                  <color R="0.9" G="0.9" B="0.9" A="0.5" />
+                </style>
+                <style key="Polygon Outline" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Supermesh" show="true" />
+                  </componentViews>
+                  <color R="0" G="0.2" B="0.2" A="1" />
+                </style>
+                <style key="Point Elements" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Supermesh" show="true" />
+                  </componentViews>
+                  <color R="0.5" G="0" B="0" A="1" />
+                </style>
+                <style key="Line Elements" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Supermesh" show="true" />
+                  </componentViews>
+                  <color R="0" G="0" B="0.5" A="1" />
+                </style>
+                <style key="Inner Border" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Supermesh borders" show="true" />
+                  </componentViews>
+                  <color R="0.4" G="0" B="0" A="1" />
+                </style>
+              </styles>
+            </source>
+          </sources>
+          <autopilot fps="20" enforcePrTime="false" finalTime="10" fracTime="0" play="false">
+            <timelines>
+              <timeline key="Position">
+                <targets>
+                  <target defined="false" fracTime="0" relDist="1" relOffsetX="0" relOffsetY="0">
+                    <tilt angleRad="0" axisX="0" axisY="0" axisZ="1" />
+                    <spin angleRad="0" axisX="0" axisY="0" axisZ="1" />
+                  </target>
+                  <target defined="false" fracTime="1" relDist="1" relOffsetX="0" relOffsetY="0">
+                    <tilt angleRad="0" axisX="0" axisY="0" axisZ="1" />
+                    <spin angleRad="0" axisX="0" axisY="0" axisZ="1" />
+                  </target>
+                </targets>
+              </timeline>
+              <timeline key="Visibility">
+                <targets>
+                  <target defined="false" fracTime="0" />
+                  <target defined="false" fracTime="1" />
+                </targets>
+              </timeline>
+            </timelines>
+          </autopilot>
+        </view>
+      </views>
+    </doc>
+  </client>
+CLIENT
+  <?xml version="1.0" encoding="utf-8" standalone="no" ?>
+  <client id="wasy.feqt" class="maps">
+    <maps title="FEFLOW maps" mapCount="0">
+      <smhMap smhType="0" id="map2104205317">
+        <layer title="Default" attribute="&lt;No Classification&gt;" id="lyr1920065892" direct3D="0" opacity="100" lighning="1" brightness="60" ambientLight="50">
+          <style styleEntries="0" />
+        </layer>
+      </smhMap>
+      <smhMap smhType="1" id="map1865696575">
+        <layer title="Default" attribute="&lt;No Classification&gt;" id="lyr1506419054" direct3D="0" opacity="100" lighning="1" brightness="60" ambientLight="50">
+          <style styleEntries="0" />
+        </layer>
+      </smhMap>
+      <smhMap smhType="2" id="map554105631">
+        <layer title="Default" attribute="&lt;No Classification&gt;" id="lyr1550985071" direct3D="0" opacity="100" lighning="1" brightness="60" ambientLight="50">
+          <style styleEntries="0" />
+        </layer>
+      </smhMap>
+    </maps>
+  </client>
+CLIENT
+  <?xml version="1.0" encoding="utf-8" standalone="no" ?>
+  <client id="wasy.feqt" class="meshgen">
+    <meshgen type="GridBuilder">
+      <properties count="9">
+        <property name="Mesh Anisotropy" value="1" />
+        <property name="Dump File" value="" />
+        <property name="Polygon Refinement" value="5" />
+        <property name="Refine Selected Edges" value="SELECTED" />
+        <property name="Line-addin Refinement" value="5" />
+        <property name="Point-addin Refinement" value="1" />
+        <property name="Drop Count" value="1" />
+        <property name="Stretch Factor" value="2" />
+        <property name="Segment Length" value="0.1" />
+      </properties>
+    </meshgen>
+  </client>
+END
