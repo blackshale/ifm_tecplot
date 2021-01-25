@@ -23,16 +23,16 @@ XCOMM -- IFM_BEGIN (Begin of IFM maintained section) --------------
            THISFILE = __FILE__
 
             IFCNAME = SIMULATION
-            MODNAME = IFMTECPLOT_V1
-            DPYNAME = Ifmtecplot_v1
+            MODNAME = IFMTECPLOT_V2
+            DPYNAME = Ifmtecplot_v2
 
-            PRIMSRC = ifmtecplot_v1.cxx
-            DSONAME = ifmtecplot_v1.so
+            PRIMSRC = ifmtecplot_v2.cxx
+            DSONAME = ifmtecplot_v2.so
              DSOREV = 1
 
             REGPROC = RegisterModule
-           HTMLFILE = ifmtecplot_v1.htm
-          COPYRIGHT = ifmtecplot_v1.txt
+           HTMLFILE = ifmtecplot_v2.htm
+          COPYRIGHT = ifmtecplot_v2.txt
 
             GUILIBS =  
 
@@ -42,7 +42,7 @@ XCOMM -- IFM_BEGIN (Begin of IFM maintained section) --------------
          IFMDEPLIBS =  $(DEPIFMLIB)
             IFMLIBS =  $(IFMLIB)
 
-            IFMOBJS = ifmtecplot_v1.o
+            IFMOBJS = ifmtecplot_v2.o
             IFMSRCS = $(PRIMSRC) 
 
 XCOMM -- IFM_END (End of IFM maintained section) ------------------
